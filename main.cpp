@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 int codigoProducto [100] = {101, 102, 103, 104, 105};
 std::string nombreProducto [100] = {"Cinta de aislar", "Llave inglesa", "Taladro", "Esmeriladora", "Destornillador"}; //Variables globales
 int stockProducto [100] = {75, 30, 7, 15, 60};
@@ -38,13 +38,13 @@ int main (){
                     std::cout<<"Cantidad en stock: " << stockProducto[i]<< std::endl;
                     std::cout<<"Precio unitario: $" << precioUnitario[i]<<"\n"<< std::endl;
                     std::cout<<"--- Menu Principal --- \n"<<std::endl;
-                    break; // Agregado para salir del loop una vez encontrado
+                    break; 
                 } 
             }
             break;
             
         case 2:
-            menu2 = 0; // Reiniciar menu2
+            menu2 = 0; 
             while (menu2 != 3)
             {   
                 std::cout<<"Que desea hacer?"<< "\n"<<std::endl;
@@ -57,7 +57,7 @@ int main (){
                 switch (menu2) 
                 {
                 case 1:
-                    for (int i = 0; i < 100; i++)
+                    for (int i = 5; i < 100; i++)
                     {   
                         std::cout<<"Ingrese el nombre del nuevo producto:"<<std::endl;
                         std::cin>> nombreProducto[i];
